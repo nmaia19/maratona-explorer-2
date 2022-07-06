@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --bg-color: hsl(223, 100%, 96%);
+  --text-color: hsl(230, 100%, 9%);
+  --primary-color: hsl(228, 81%, 59%);
+  --primary-color-dark: hsl(230, 57%, 50%);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/*====== COLOR MODS ====== */
+body.dark-blue {
+  --bg-color: hsla(230, 100%, 9%);
+  --text-color: white;
+}
+
+body.pink {
+  --bg-color: hsl(336, 100%, 97%);
+  --text-color: hsl(230, 100%, 9%);
+  --primary-color: hsl(339, 67%, 52%);
+  --primary-color-dark: hsla(339, 69%, 38%);
+}
+
+body.dark-pink {
+  --bg-color: hsl(339, 100%, 6%);
+  --text-color: white;
+  --primary-color: hsl(339, 67%, 52%);
+  --primary-color-dark: hsla(339, 69%, 38%);
+}
+
+/*====== GERAL ====== */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 30rem;
+  height: 50.5rem;
+  margin-top: 6em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*====== HEADER ====== */
+
+.avatar {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  padding: 0.4em;
+
+  border: 0.4rem solid var(--primary-color);
+}
+
+.name {
+  margin-top: 2.4rem;
+
+  font-size: 3.2em;
+  line-height: 3.8rem;
+}
+
+.username {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+/*====== BOTÕES ====== */
+
+main.links {
+  margin: 4.8rem 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+ul li {
+  padding: 1.6rem 8rem;
+  background: var(--primary-color);
+  border-radius: 0.6rem;
+
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 150%;
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 80ms ease-in;
+}
+
+ul li a {
+  color: #ffffff;
+}
+
+/*====== FOOTER ====== */
+footer {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.6rem;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+li:hover {
+  background: var(--primary-color-dark);
+}
+
+footer:hover {
+  opacity: 1;
+}
